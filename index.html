@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DIFF-TEXT</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="navigation__bar">
+			<div class="container">
+				<h2 class="navigation__title"><span>SQLData</span>DiffChecker</h2>
+			</div>
+		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 textbox__title">
+                    <p>Source Text</p>
+                </div>
+                <div class="col-sm-6 textbox__title">
+                    <p>Modified Text</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 textbox__area">
+                    <textarea class="form-control" rows="10" id="source-textarea" placeholder="Enter source text"></textarea>
+                </div>
+                <div class="col-sm-6 textbox__area">
+                    <textarea class="form-control" rows="10" id="modified-textarea" placeholder="Enter modified text"></textarea>
+                </div>
+            </div>
+			<div class="row" id="total-diff">
+				<div class="col-sm-12">
+					<h4 id="msg"></h4>
+				</div>
+			</div>
+			<div class="row" id="diff-row">
+				<div class="col-sm-6" id="source-diff"></div>
+				<div class="col-sm-6" id="modified-diff"></div>
+			</div>
+        </div>
+		<div class="footer">
+			<p>Made with &hearts; SQL Data Diff Checker</p>
+			<p>&copy;&nbsp;<span id="date"></span></p>
+		</div>
+		<script src="./assets/scripts/main.js"></script>
+	</body>
+</html>

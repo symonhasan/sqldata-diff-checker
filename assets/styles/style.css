@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #fafbfa;
+    color: #222222;
+    font-family: 'EB Garamond', serif;
+}
+
+.navigation__bar{
+    padding: 5px 0px;
+    background-color: #fff;
+    border: 1px solid #22222231;
+    margin-bottom: 10px;
+}
+
+.navigation__title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navigation__title > span{
+    color: #4285f4;
+    font-size: 2rem;
+    padding-right: 2px;
+}
+
+.textbox__title{
+    background-color: #4285f4;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.textbox__title > p{
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.textbox__area{
+    padding: 10px 15px;
+    background-color: #bfd7ea;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.textbox__area > textarea{
+    resize: none;
+}
+
+#total-diff{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4285f4;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px 4px 0px 0px;
+}
+
+#diff-row{
+    height: 400px;
+    background-color: #bfd7ea;
+    border: 2px solid #fff;
+    border-radius: 0px 0px 4px 4px;
+    overflow: auto;
+}
+
+#modified-diff div, #source-diff div{
+    padding: 5px 10px;
+    height: 30px;
+}
+
+.diff-green{
+    background-color: rgb(0, 179, 89, .50);
+}
+
+.diff-red{
+    background-color: rgb(255, 0, 0, .50);
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 300;
+    border: 1px solid #22222231;
+}
+
+.footer p{
+    opacity: 0.5;
+    margin-bottom: 0px;
+}
