@@ -10,10 +10,13 @@ body{
 }
 
 .navigation__bar{
+    position: sticky;
+    top: 0;
     padding: 5px 0px;
     background-color: #fff;
     border: 1px solid #22222231;
     margin-bottom: 10px;
+    z-index: 1;
 }
 
 .navigation__title{
@@ -69,6 +72,7 @@ body{
     border: 2px solid #fff;
     border-radius: 0px 0px 4px 4px;
     overflow: auto;
+    margin-bottom: 70px;
 }
 
 #modified-diff div, #source-diff div{
@@ -85,6 +89,7 @@ body{
 }
 
 .footer{
+    height: 60px;
     width: 100%;
     position: fixed;
     bottom: 0px;
